@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project_02/pages/home_page.dart';
+import 'package:project_02/widgets/producto_preview.dart';
 
 void main() {
   runApp(const MyApp());

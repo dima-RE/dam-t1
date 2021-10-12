@@ -20,7 +20,7 @@ class _RootPageState extends State<RootPage> {
     {
       'pagina': TabIni(),
       'texto': 'Inicio',
-      'icono': MdiIcons.handHeartOutline,
+      'icono': MdiIcons.homeOutline,
       'color': 0xFFA83279,
     },
     {
