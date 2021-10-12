@@ -3,12 +3,13 @@ import 'package:project_02/widgets/producto_preview.dart';
 
 class ProductoCard extends StatelessWidget {
   //const ProductoPreview({Key? key}) : super(key: key);
-  final String img, nom, prec;
+  final String img, nom, prec, det;
 
   ProductoCard({
     this.img = "",
     this.nom = "",
     this.prec = "",
+    this.det = "",
   });
 
   @override
@@ -20,7 +21,7 @@ class ProductoCard extends StatelessWidget {
       width: double.infinity,
       height: 450,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.all(Radius.circular(10.0)),
+        borderRadius: BorderRadius.all(Radius.circular(5.0)),
         border: Border.all(color: Colors.indigoAccent),
       ),
       // Elemento
@@ -31,6 +32,7 @@ class ProductoCard extends StatelessWidget {
             image: AssetImage('assets/images/productos/$img.jpg'),
           ),
           Container(
+            margin: EdgeInsets.all(5),
             child: Column(
               children: [
                 Text(
@@ -41,8 +43,11 @@ class ProductoCard extends StatelessWidget {
                   'Precio: \$ $prec',
                   style: Theme.of(context).textTheme.bodyText1,
                 ),
-                OutlinedButton(
-                  child: Text('Ver'),
+                ElevatedButton(
+                  child: Text(
+                    'Ver',
+                    style: Theme.of(context).textTheme.bodyText2,
+                  ),
                   onPressed: () {
                     Navigator.push(
                       context,
@@ -51,7 +56,7 @@ class ProductoCard extends StatelessWidget {
                                 img: img,
                                 nom: nom,
                                 prec: prec,
-                                det: 'Hola',
+                                det: det,
                               )),
                     );
                   },

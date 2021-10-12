@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:project_02/pages/tabs/inicio_tab.dart';
-import 'package:project_02/pages/tabs/nosotros_tab.dart';
+import 'package:project_02/pages/tabs/menu_tab.dart';
 import 'package:project_02/pages/tabs/productos_tab.dart';
 
 class RootPage extends StatefulWidget {
@@ -13,7 +13,7 @@ class RootPage extends StatefulWidget {
 
 class _RootPageState extends State<RootPage> {
   //https://encycolorpedia.gr/a83279
-  //color 0xffa83279
+  //colorzilla
   int curIndex = 0;
 
   var pages = [
@@ -30,7 +30,7 @@ class _RootPageState extends State<RootPage> {
       'color': 0xff59189e,
     },
     {
-      'pagina': TabNosotros(),
+      'pagina': TabMenu(),
       'texto': 'Menú',
       'icono': MdiIcons.reorderHorizontal,
       'color': 0xffe014dd,

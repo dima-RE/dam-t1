@@ -18,14 +18,14 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
           // COLORS
           //brightness: Brightness.dark,
-          primaryColor: Colors.amber,
-          primarySwatch: Colors.purple,
+          primarySwatch: Colors.deepPurple,
           // FONTS
           fontFamily: 'Lora',
           textTheme: const TextTheme(
             headline1: TextStyle(fontSize: 50, fontStyle: FontStyle.italic),
             subtitle1: TextStyle(fontSize: 25, fontWeight: FontWeight.w700),
-            bodyText1: TextStyle(fontSize: 15),
+            bodyText1: TextStyle(fontSize: 16),
+            bodyText2: TextStyle(fontSize: 20, color: Colors.white),
           )),
       home: RootPage(),
     );

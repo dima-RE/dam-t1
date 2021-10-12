@@ -21,6 +21,10 @@ class TabIni extends StatelessWidget {
             'Lora Texto 1',
             style: Theme.of(context).textTheme.bodyText1,
           ),
+          Text(
+            'Lora Texto 2',
+            style: Theme.of(context).textTheme.bodyText2,
+          )
         ],
       ),
     );
