@@ -15,8 +15,17 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.purple,
-      ),
+          // COLORS
+          //brightness: Brightness.dark,
+          primaryColor: Colors.amber,
+          primarySwatch: Colors.purple,
+          // FONTS
+          fontFamily: 'Lora',
+          textTheme: const TextTheme(
+            headline1: TextStyle(fontSize: 50, fontStyle: FontStyle.italic),
+            subtitle1: TextStyle(fontSize: 25, fontWeight: FontWeight.w700),
+            bodyText1: TextStyle(fontSize: 15),
+          )),
       home: RootPage(),
     );
   }

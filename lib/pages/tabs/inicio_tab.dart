@@ -5,8 +5,24 @@ class TabIni extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Text('holi'),
+    return Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          Text(
+            'Lora Titulo 1',
+            style: Theme.of(context).textTheme.headline1,
+          ),
+          Text(
+            'Lora Subtitulo 1',
+            style: Theme.of(context).textTheme.subtitle1,
+          ),
+          Text(
+            'Lora Texto 1',
+            style: Theme.of(context).textTheme.bodyText1,
+          ),
+        ],
+      ),
     );
   }
 }

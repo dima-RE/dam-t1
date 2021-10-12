@@ -31,8 +31,8 @@ class _RootPageState extends State<RootPage> {
     },
     {
       'pagina': TabNosotros(),
-      'texto': 'Nosotros',
-      'icono': MdiIcons.informationOutline,
+      'texto': 'Menú',
+      'icono': MdiIcons.reorderHorizontal,
       'color': 0xffe014dd,
     },
   ];

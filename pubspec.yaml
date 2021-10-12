@@ -59,8 +59,9 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-assets:
-  - assets/images/
+  assets:
+    - assets/images/productos/
+    - assets/images/empresa/
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
@@ -75,7 +76,15 @@ assets:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
+  fonts:
+    - family: Lora
+      fonts:
+        - asset: assets/fonts/Lora/static/Lora-Regular.ttf
+        - asset: assets/fonts/Lora/static/Lora-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Lora/static/Lora-Italic.ttf
+          style: italic
+
   #   - family: Schyler
   #     fonts:
   #       - asset: fonts/Schyler-Regular.ttf
