@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project_02/widgets/image_box.dart';
 import 'package:project_02/widgets/producto_preview.dart';
 
 class ProductoCard extends StatelessWidget {
@@ -21,16 +22,13 @@ class ProductoCard extends StatelessWidget {
       width: double.infinity,
       height: 450,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.all(Radius.circular(5.0)),
+        borderRadius: BorderRadius.all(Radius.circular(7.0)),
         border: Border.all(color: Colors.indigoAccent),
       ),
       // Elemento
       child: Column(
         children: [
-          Image(
-            height: 300,
-            image: AssetImage('assets/images/productos/$img.jpg'),
-          ),
+          ImagePic(img: img),
           Container(
             margin: EdgeInsets.all(5),
             child: Column(

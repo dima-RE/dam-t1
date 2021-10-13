@@ -26,14 +26,14 @@ class _RootPageState extends State<RootPage> {
     {
       'pagina': TabProductos(),
       'texto': 'Productos',
-      'icono': MdiIcons.cartOutline,
+      'icono': MdiIcons.silverwareVariant,
       'color': 0xff59189e,
     },
     {
       'pagina': TabMenu(),
       'texto': 'Menú',
       'icono': MdiIcons.reorderHorizontal,
-      'color': 0xffe014dd,
+      'color': 0xffe094dd,
     },
   ];
 

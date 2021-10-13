@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project_02/widgets/image_box.dart';
 
 class ProductoPreview extends StatelessWidget {
   //const ProductoPreview({Key? key}) : super(key: key);
@@ -51,11 +52,7 @@ class ProductoPreview extends StatelessWidget {
                       ),
                       Container(
                         alignment: Alignment.center,
-                        child: Image(
-                          //width: 250,
-                          height: 220,
-                          image: AssetImage('assets/images/productos/$img.jpg'),
-                        ),
+                        child: ImagePic(img: img),
                       ),
                     ],
                   ),

@@ -16,19 +16,7 @@ class TabUbicacion extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Text(
-              'Somos una empresa dedicada a la innovación alimentaria.',
-              style: Theme.of(context).textTheme.bodyText2,
-            ),
-            Text(
-              'Nos dedicamos al estudio de los alimentos y las infinitudes de combinaciones que podemos conseguir para el gusto de todas las personas.',
-              style: Theme.of(context).textTheme.bodyText2,
-            ),
-            Text(
-              'Contamos con el personal más experimentado de la región y reconocidos a nivel internacional por su espectacular trabajo en los últimos años.',
-              style: Theme.of(context).textTheme.bodyText2,
-            ),
-            Text(
-              'Cada día nos esforzamos más para sorprenderte.',
+              'Actualmente nos encontramos en Mall Plaza de Quilpué. Nos pueden ubicar en el último piso, cerca del cine.',
               style: Theme.of(context).textTheme.bodyText2,
             ),
             Container(
@@ -39,7 +27,7 @@ class TabUbicacion extends StatelessWidget {
                 border: Border.all(color: Colors.deepPurple),
                 image: DecorationImage(
                   fit: BoxFit.fitWidth,
-                  image: AssetImage('assets/images/empresa/e1.jpg'),
+                  image: AssetImage('assets/images/empresa/e1.png'),
                 ),
               ),
             ),
