@@ -9,14 +9,14 @@ class TabMenu extends StatelessWidget {
       'icon': MdiIcons.mapMarkerOutline,
     },
     {
-      'title': 'Sobre nosotros',
-      'sub': 'Información sobre la empresa',
-      'icon': MdiIcons.mapMarkerOutline,
+      'title': 'Empresa',
+      'sub': 'Sobre nosotros',
+      'icon': MdiIcons.informationOutline,
     },
     {
       'title': 'Versión',
       'sub': 'Versión de la aplicación',
-      'icon': MdiIcons.mapMarkerOutline,
+      'icon': MdiIcons.check,
     },
   ];
 //Metodo de mapeo
@@ -30,13 +30,13 @@ class TabMenu extends StatelessWidget {
               return Column(
                 children: [
                   ListTile(
-                    leading: Icon(m['icon'] as IconData),
-                    title: Text(m['title'].toString()),
-                    subtitle: Text(m['title'].toString()),
+                    leading: Icon(m['icon'] as IconData, size: 35),
+                    title: Text(m['title'].toString(),
+                        style: Theme.of(context).textTheme.subtitle2),
+                    subtitle: Text(m['sub'].toString(),
+                        style: Theme.of(context).textTheme.bodyText2),
                     onTap: () {
-                      //Navigator.pushNamed(
-                      //    context, '/' + m['titlw'].toString());
-                      // no se te olvido crear los ROUTES
+                      Navigator.pushNamed(context, '/' + m['title'].toString());
                     },
                   ),
                   Divider(thickness: 1.0),

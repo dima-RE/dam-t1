@@ -43,7 +43,7 @@ class _RootPageState extends State<RootPage> {
       appBar: AppBar(
         backgroundColor: Color(int.parse(pages[curIndex]['color'].toString())),
         leading: Icon(pages[curIndex]['icono'] as IconData),
-        title: Text('Porti: ' + pages[curIndex]['texto'].toString()),
+        title: Text(pages[curIndex]['texto'].toString()),
       ),
       body: pages[curIndex]['pagina'] as Widget,
       bottomNavigationBar: BottomNavigationBar(

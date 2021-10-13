@@ -41,12 +41,12 @@ class ProductoCard extends StatelessWidget {
                 ),
                 Text(
                   'Precio: \$ $prec',
-                  style: Theme.of(context).textTheme.bodyText1,
+                  style: Theme.of(context).textTheme.bodyText2,
                 ),
                 ElevatedButton(
                   child: Text(
                     'Ver',
-                    style: Theme.of(context).textTheme.bodyText2,
+                    style: Theme.of(context).textTheme.bodyText1,
                   ),
                   onPressed: () {
                     Navigator.push(

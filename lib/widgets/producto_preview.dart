@@ -20,7 +20,6 @@ class ProductoPreview extends StatelessWidget {
           title: Text(nom),
           elevation: 0,
         ),
-        //singleChildScroll en caso de que no pueda ser utilizado por toda la pantalla
         body: Container(
           child: Column(
             children: [
@@ -30,7 +29,6 @@ class ProductoPreview extends StatelessWidget {
                   height: 350,
                   color: Colors.deepPurple[300],
                   child: Stack(
-                    //se utiliza para evitar que un elemento de corte fuera del stack
                     clipBehavior: Clip.none,
                     children: [
                       Positioned(
@@ -64,7 +62,7 @@ class ProductoPreview extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: EdgeInsets.all(15),
+                margin: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
                 child: Column(
                   children: [
                     Text(
@@ -79,16 +77,16 @@ class ProductoPreview extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: EdgeInsets.all(15),
+                margin: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
                 child: Text(
                   det,
-                  style: Theme.of(context).textTheme.bodyText1,
+                  style: Theme.of(context).textTheme.bodyText2,
                 ),
               ),
               ElevatedButton(
                 child: Text(
                   'Volver',
-                  style: Theme.of(context).textTheme.bodyText2,
+                  style: Theme.of(context).textTheme.bodyText1,
                 ),
                 onPressed: () {
                   Navigator.pop(context);
@@ -97,32 +95,5 @@ class ProductoPreview extends StatelessWidget {
             ],
           ),
         ));
-  }
-}
-
-//exportar a un archivo DART aparte
-class exampleBox extends StatelessWidget {
-  const exampleBox({
-    required this.color,
-    required this.text,
-    Key? key,
-  }) : super(key: key);
-
-  final int color;
-  final String text;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: 70,
-      height: double.infinity,
-      color: Color(this.color),
-      alignment: Alignment.center,
-      child: Text(
-        this.text,
-        style: TextStyle(
-            fontSize: 16, color: Colors.white, fontWeight: FontWeight.bold),
-      ),
-    );
   }
 }

@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:project_02/pages/home_page.dart';
+import 'package:project_02/pages/tabs/nosotros_tab.dart';
+import 'package:project_02/pages/tabs/ubicacion_tab.dart';
+import 'package:project_02/pages/tabs/version_tab.dart';
 import 'package:project_02/widgets/producto_preview.dart';
 
 void main() {
@@ -24,10 +27,19 @@ class MyApp extends StatelessWidget {
           textTheme: const TextTheme(
             headline1: TextStyle(fontSize: 50, fontStyle: FontStyle.italic),
             subtitle1: TextStyle(fontSize: 25, fontWeight: FontWeight.w700),
-            bodyText1: TextStyle(fontSize: 16),
-            bodyText2: TextStyle(fontSize: 20, color: Colors.white),
+            subtitle2: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),
+            bodyText1: TextStyle(fontSize: 20, color: Colors.white),
+            bodyText2: TextStyle(fontSize: 17),
           )),
-      home: RootPage(),
+      //home: RootPage(),
+
+      routes: {
+        '/': (context) => RootPage(),
+        '/Ubicación': (context) => TabUbicacion(),
+        '/Empresa': (context) => TabNosotros(),
+        '/Versión': (context) => TabVersion(),
+      },
+      initialRoute: '/',
     );
   }
 }
